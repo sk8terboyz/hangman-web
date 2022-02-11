@@ -36,6 +36,8 @@ function failedGuess(letter) {
         // display the next part of the hangman
         change.classList.remove("hidden-img");
         // display incorrectly guessed letters
+        // This link should help to add the letters in a grid to keep them disconnected and easier viewing on the page
+        // https://stackoverflow.com/questions/11083345/creating-a-dynamic-grid-of-divs-with-javascript
     }
     else {
         gameOver(false);

@@ -14,7 +14,7 @@ html {
     top: 5%;
     right: 10%;
     font-size: clamp(1rem, 5vw, 10rem);
-    color: rgb(128, 20, 161);
+    color: rgb(131, 93, 175);
 }
 
 .wrong-letters {
@@ -26,6 +26,8 @@ html {
     color: white;
     display: grid;
 }
+
+
 
 .hidden-img {
     opacity: 0%;
