@@ -1,0 +1,73 @@
+
+html body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+html {
+    background: linear-gradient(0.25turn, #b62917, #ebf8e1, #2bb0b4);
+}
+.title {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    font-size: clamp(1rem, 5vw, 10rem);
+    color: cadetblue;
+}
+
+.hidden {
+    opacity: 0%;
+}
+
+.hangman {
+    position: absolute;
+    top: 20%;
+    width: 40%;
+    height: 50%;
+    -webkit-transition: opacity 2s ease-in;
+    -moz-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+    transition: opacity 2s ease-in;
+}
+
+.input-btn {
+    position: absolute;
+    right: 45.5%;
+    top: 50%;
+    width: 7%;
+    height: 7%;
+    font-size: clamp(1rem, 2em, 10rem);
+    box-shadow: inset 0 0 0 #44e71b;
+    -webkit-transition: ease-out 0.4s;
+    -moz-transition: ease-out 0.4s;
+    -o-transition: ease-out 0.4s;
+    transition: ease-out 0.4s;
+}
+
+.input-btn:hover {
+    box-shadow: inset 0 0 0 50px #177e0d;
+}
+
+#input {
+    position: absolute;
+    right: 45%;
+    top: 40%;
+    width: 8%;
+    height: 8%;
+    font-size: clamp(1rem, 3vw, 5rem);
+    text-align: center;
+}
+
+/* Animation keyframe styles */
+
+@-webkit-keyframes fade {
+    0%,100% { opacity: 0; }
+    /* 50% { opacity: 1; } */
+}
+
+@keyframes fade {
+    0%,100% { opacity: 0; }
+    /* 100% { opacity: 1; } */
+}
