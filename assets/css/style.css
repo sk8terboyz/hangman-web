@@ -14,7 +14,7 @@ html {
     top: 5%;
     right: 10%;
     font-size: clamp(1rem, 5vw, 10rem);
-    color: rgb(22, 148, 75);
+    color: rgb(128, 20, 161);
 }
 
 .wrong-letters {
