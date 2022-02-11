@@ -7,17 +7,27 @@ html body {
     overflow-x: hidden;
 }
 html {
-    background: linear-gradient(0.25turn, #b62917, #ebf8e1, #2bb0b4);
+    background: linear-gradient(to left, #2bb0b4 20%, #caccc9 50%, #b82411 80%);
 }
 .title {
     position: absolute;
     top: 5%;
     right: 10%;
     font-size: clamp(1rem, 5vw, 10rem);
-    color: cadetblue;
+    color: rgb(22, 148, 75);
 }
 
-.hidden {
+.wrong-letters {
+    position: absolute;
+    width: 40%;
+    top: 5%;
+    left: 3%;
+    font-size: clamp(1rem, 2vw, 5rem);
+    color: white;
+    display: grid;
+}
+
+.hidden-img {
     opacity: 0%;
 }
 
@@ -58,16 +68,4 @@ html {
     height: 8%;
     font-size: clamp(1rem, 3vw, 5rem);
     text-align: center;
-}
-
-/* Animation keyframe styles */
-
-@-webkit-keyframes fade {
-    0%,100% { opacity: 0; }
-    /* 50% { opacity: 1; } */
-}
-
-@keyframes fade {
-    0%,100% { opacity: 0; }
-    /* 100% { opacity: 1; } */
 }
