@@ -11,8 +11,25 @@
     <div class="title__wrapper">
         <h1 class="title">HANGMAN</h1>
     </div>
-    <div class="wrong-letters">
-        <p>t</p>
+    <div class="wrong-letters__wrapper">
+        <ul class="wrong-letters">
+            
+        </ul>
+    </div>
+    <div class="correct-letters__wrapper">
+        <p class="hidden">I have no clue why this has to be here, but if it's removed it will remove the background.</p>
+        <ul class="letters">
+            <li id="first-letter" class="hidden">F</li>
+            <li id="second-letter" class="hidden">I</li>
+            <li id="third-letter" class="hidden">R</li>
+            <li id="fourth-letter" class="hidden">E</li>
+        </ul>
+        <ul class="underline-letters">
+            <li id="underline">_</li>
+            <li id="underline">_</li>
+            <li id="underline">_</li>
+            <li id="underline">_</li>
+        </ul>
     </div>
     <div class="hangman-img__wrapper">
         <img class="hangman hidden-img" id="hangman-base" src="assets/images/base.png" alt="base of the hangman">
@@ -27,7 +44,10 @@
         <input type="text" id="input" maxlength="1" autofocus>
     </div>
     <button class="input-btn">Guess</button>
-    <ul class="incorrect-letters"></ul>
+    <div class="results__wrapper">
+        <img src="" alt="Winning text" class="winner hidden">
+        <img src="" alt="Losing text" class="loser hidden">
+    </div>
     <script src="assets/js/index.js"></script>
 </body>
 </html>
