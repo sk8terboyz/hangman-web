@@ -8,6 +8,7 @@ html body {
 }
 html {
     background: linear-gradient(to left, #2bb0b4 20%, #caccc9 50%, #b82411 80%);
+    /* background: linear-gradient(to left, #2bb0b4 20%, #caccc9 50%, #b39909 80%); */
 }
 .title {
     position: absolute;
@@ -31,14 +32,6 @@ html {
     list-style-type: none;
     margin: 1em;
 }
-
-/* .correct-letters__wrapper {
-    text-align: center;
-    position: absolute;
-    bottom: 10%;
-    right: 5%;
-    width: 40%;
-} */
 
 .underline-letters {
     position: absolute;
@@ -94,7 +87,7 @@ ul li {
     top: 50%;
     width: 7%;
     height: 7%;
-    font-size: clamp(1rem, 2em, 10rem);
+    font-size: clamp(1rem, 1vw, 10rem);
     box-shadow: inset 0 0 0 #44e71b;
     -webkit-transition: ease-out 0.4s;
     -moz-transition: ease-out 0.4s;
@@ -118,10 +111,6 @@ ul li {
 
 .hidden {
     opacity: 0%;
-}
-
-.not-allowed:hover {
-    cursor: not-allowed;
 }
 
 .results__wrapper {

@@ -75,13 +75,12 @@ function failedGuess(letter) {
         change.classList.remove("hidden-img");
         // Create list element to add to ul of wrong letters
         var wrong = document.createElement('li')
-        wrong.textContent = letter;
+        wrong.textContent = letter.toUpperCase();
         // display incorrectly guessed letters
         letters.appendChild(wrong);
     }
     else {
         gameOver(false);
-        document.querySelector('#input').classList.add('not-allowed');
     }
 }
 
@@ -95,4 +94,5 @@ function gameOver(result) {
         // Display "You Lose!" in the blue area (Unfinished - needs a "You Lose" image to bring visible)
         document.querySelector('.loser').classList.remove('hidden');
     }
+    document.querySelector('input').classList.add('hidden');
 }
