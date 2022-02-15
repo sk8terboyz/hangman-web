@@ -115,11 +115,19 @@ ul li {
 
 .results__wrapper {
     position: absolute;
-    right: 15%;
+    left: clamp(50%, 60%, 80%);
     top: 30%;
     text-align: center;
 }
 
 .results {
     font-size: clamp(1rem, 4vw, 10rem);
+}
+
+.winner {
+    width: 50%;
+}
+
+.loser {
+    width: 50%;
 }

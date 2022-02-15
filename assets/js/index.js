@@ -94,5 +94,5 @@ function gameOver(result) {
         // Display "You Lose!" in the blue area (Unfinished - needs a "You Lose" image to bring visible)
         document.querySelector('.loser').classList.remove('hidden');
     }
-    document.querySelector('input').classList.add('hidden');
+    document.querySelector('input').parentNode.removeChild(input);
 }
