@@ -22,7 +22,7 @@ html {
     position: absolute;
     width: 40%;
     top: 5%;
-    left: 3%;
+    left: clamp(1%, 2%, 3%);
     overflow: hidden;
 }
 
@@ -30,7 +30,7 @@ html {
     text-decoration: none;
     display: block;
     list-style-type: none;
-    margin: 1em;
+    margin: clamp(0.1em, 1em, 1.1em);
 }
 
 .underline-letters {
@@ -101,9 +101,9 @@ ul li {
 
 #input {
     position: absolute;
-    right: 45%;
+    right: 44%;
     top: 40%;
-    width: 8%;
+    width: clamp(10%, 10%, 15%);
     height: 8%;
     font-size: clamp(1rem, 3vw, 5rem);
     text-align: center;
