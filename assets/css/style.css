@@ -126,9 +126,11 @@ ul li {
 }
 
 .winner {
-    width: 50%;
+    width: 80%;
 }
 
 .loser {
-    width: 50%;
+    position: absolute;
+    right: 20%;
+    width: 80%;
 }
